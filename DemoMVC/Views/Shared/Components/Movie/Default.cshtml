@@ -1,0 +1,17 @@
+﻿@model DemoMVC.Models.Movie
+<!--[Horizontal card]-->
+<div class="card text-white bg-dark" style="width:18rem">
+    <div class="card-image-container">
+        <img src="@Model.Poster" class="card-img-top card-image" alt="@Model.Title">
+        <div class="card-image__smooth-bg"></div>
+    </div>
+    <div class="card-img-overlay">
+        <h5 class="card-title text-capitalize text-wrap">@Model.Title</h5>
+        <p class="card-text text-truncate">@Model.Description</p>
+        <p class="card-text"><small>Year: @Model.Year</small></p>
+        <a class="card-link" asp-controller="Movies" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+        <a class="card-link" asp-controller="Movies" asp-action="Details" asp-route-id="@Model.Id">Details</a>
+        <a class="card-link" asp-controller="Movies" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+    </div>
+</div>
+<!--[/Horizontal card]-->

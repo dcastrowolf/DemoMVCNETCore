@@ -1,0 +1,18 @@
+﻿@model IEnumerable<DemoMVC.Models.Movie>
+
+@{
+    ViewData["Title"] = "List of movies";
+}
+
+<h1>List of movies</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="row">
+    <div class="card-deck">
+        @foreach (var movie in Model) {
+            <vc:movie movie="movie" ></vc:movie>
+        }
+    </div>
+</div>
