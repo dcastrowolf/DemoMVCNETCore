@@ -4,7 +4,9 @@
     @foreach (var movie in Model)
     {
         <div class="card text-white bg-dark" style="width: 18rem;">
-            <img src="@movie.Poster" class="card-img-top card-image" alt="@movie.Title">
+            <div class="card-image-container">
+                <img src="@movie.Poster" class="card-img-top card-image" alt="@movie.Title">
+            </div>
             <div class="card-body">
                 <h5 class="card-title text-capitalize">@movie.Title - @movie.Year</h5>
                 <p class="card-text">@movie.Description</p>
