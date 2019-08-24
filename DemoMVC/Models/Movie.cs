@@ -12,7 +12,7 @@ namespace DemoMVC.Models
         [Required]
         [StringLength(150)]
         public string Description { get; set; }
-        [RegularExpression("^(1|2)[0-9]{3}$")]
+        [RegularExpression("^(1|2)[0-9]{3}$", ErrorMessage ="Please provide a valid Year")]
         public string Year { get; set; }
         [Display(Name ="Poster Link")]
         [RegularExpression(@"^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$",

@@ -71,7 +71,12 @@ body {
 .card-image__smooth-bg {
     width:inherit;
     height: inherit;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(128, 128, 128, 0.6);
     position:absolute;
     top:0;
+}
+
+.card-link{
+    color:#fffffb;
+    font-weight: bold;
 }
